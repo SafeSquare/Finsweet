@@ -225,10 +225,10 @@ li {
   margin-left: 18%;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .container {
     width: 95vw;
   } 
-}
+} */
 
 
