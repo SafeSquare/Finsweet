@@ -13,19 +13,20 @@
   margin: auto;
 }
 
-.view {
+/* Margin and Padding */
+.padding-top {
   padding-top: 1%;
 }
 
-
-.top, .linee {
+.margin-top, .red-line {
   margin-top: 10%;
 }
 
-.bottom {
+.margin-bottom {
   margin-bottom: 5%;
 }
 
+/* Home page sections */
 .view-one, .view-three {
   padding: 5% 0;
 }
@@ -40,6 +41,7 @@
   background-color: #F2F2F2;
 }
 
+/* Buttons */
 .orange-button, input[type="submit"] {
   margin: 5% 0;
   border: none;
@@ -77,6 +79,7 @@ input[type=text], input[type=email], input[type=tel] {
   opacity: 0.7;
 }
 
+/* Fonts */
 h1 {
   font-size: 40px;
   font-weight: 600;
@@ -119,14 +122,15 @@ li {
   list-style: none;
 }
 
+/* Vertical lines */
 .line {
   height: 30px;
-  margin: 0 2vw;
   opacity: 0.3;
+  margin: 0 2vw;
   border: 1px solid #939191; 
 }
 
-.linee {
+.red-line {
   width: 2px;
   height: 40px;
   opacity: 0.3;
@@ -142,7 +146,7 @@ li {
   align-items: center;
 }
 
-.alignn {
+.text-align {
   text-align: center;
 }
 
@@ -199,12 +203,13 @@ li {
   margin: 5% 0;
 }
 
+/* Orange Box with text */
 .orange-card {
   width: 77%;
-  padding: 19% 16.7%;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   text-align: center;
+  padding: 19% 16.7%;
   background-color: #FF6433;
 }
 
