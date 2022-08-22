@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  color: #1E1B1B;
+  color: #1e1b1b;
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -13,12 +13,21 @@
   margin: auto;
 }
 
+.color {
+  color: #ffffff;
+}
+
 /* Margin and Padding */
 .padding-top {
   padding-top: 1%;
 }
 
-.margin-top, .red-line {
+.pad-top {
+  padding-top: 5%;
+}
+
+.margin-top,
+.red-line {
   margin-top: 10%;
 }
 
@@ -27,29 +36,41 @@
 }
 
 /* Home page sections */
-.view-one, .view-three {
+.view-one,
+.view-three {
   padding: 5% 0;
 }
 
 .view-two {
   padding: 5% 0;
-  background-color: #E2E6E9;
+  background-color: #e2e6e9;
 }
 
 .view-four {
   padding: 5% 0;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+}
+
+.view-five {
+  padding: 5% 0;
+  background-color: #1e1b1b;
+}
+
+.view-six {
+  padding: 2% 0;
+  background-color: #000;
 }
 
 /* Buttons */
-.orange-button, input[type="submit"] {
+.orange-button,
+input[type="submit"] {
   margin: 5% 0;
   border: none;
   font-size: 15px;
   font-weight: 600;
   color: #ffffff;
   border-radius: 12px;
-  background-color: #FF6433;
+  background-color: #ff6433;
   padding: 16px 30px 16px 30px;
 }
 
@@ -60,7 +81,7 @@
   font-weight: 600;
   color: #ffffff;
   border-radius: 12px;
-  background-color: #1E1B1B;
+  background-color: #1e1b1b;
   padding: 16px 30px 16px 30px;
 }
 
@@ -69,13 +90,15 @@
   left: 41%;
 }
 
-input[type=text], input[type=email], input[type=tel] {
-  width: 100%; 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
   border: none;
-  padding: 20px 30px; 
+  padding: 20px 30px;
 }
 
-::placeholder { 
+::placeholder {
   opacity: 0.7;
 }
 
@@ -109,7 +132,8 @@ p {
   margin-left: 5vw;
 }
 
-small, .opaque {
+small,
+.opaque {
   opacity: 0.5;
 }
 
@@ -127,7 +151,7 @@ li {
   height: 30px;
   opacity: 0.3;
   margin: 0 2vw;
-  border: 1px solid #939191; 
+  border: 1px solid #939191;
 }
 
 .red-line {
@@ -135,7 +159,7 @@ li {
   height: 40px;
   opacity: 0.3;
   margin-left: 2vw;
-  border: 1px dotted #FF6433; 
+  border: 1px dotted #ff6433;
 }
 
 .flex {
@@ -158,15 +182,19 @@ li {
   margin-right: 1vw;
 }
 
-.section-one, .section-two {
+.section-one,
+.section-two {
   width: 50vw;
 }
 
-.section-two, .relative {
+.section-two,
+.relative {
   position: relative;
 }
 
-.service, .rating, .absolute {
+.service,
+.rating,
+.absolute {
   position: absolute;
 }
 
@@ -187,6 +215,15 @@ li {
   grid-template-columns: 25% 25% 25% 25%;
 }
 
+.grid-box {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid-box img {
+  width: 100%;
+}
+
 .card {
   padding: 20%;
   margin-bottom: 5px;
@@ -194,9 +231,19 @@ li {
   background-color: #ffffff;
 }
 
+.card-two {
+  padding: 10%;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.card-three {
+  margin-bottom: 2%;
+}
+
 .card:hover {
-  background-color: #FF6433;
-  transition: .75s;
+  background-color: #ff6433;
+  transition: 0.75s;
 }
 
 .images-flex {
@@ -210,7 +257,7 @@ li {
   font-weight: 700;
   text-align: center;
   padding: 19% 16.7%;
-  background-color: #FF6433;
+  background-color: #ff6433;
 }
 
 .absolute {
@@ -225,10 +272,63 @@ li {
   margin-left: 18%;
 }
 
-/* @media screen and (max-width: 768px) {
-  .container {
-    width: 95vw;
-  } 
-} */
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
+.swiper-slide img {
+  width: 15%;
+}
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5%;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ff6433;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 2%;
+  display: none;
+  background-color: #ffffff;
+}
+
+.accordion:after {
+  padding: 10px;
+  font-size: 15px;
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  background-color: #eee;
+}
+
+.active:after {
+  background-color:#1e1b1b;
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 768px) {
+  /* .container {
+    width: 95vw; */
+  }
