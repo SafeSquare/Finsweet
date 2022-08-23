@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Best method for favicon? -->
     <link rel="icon" type="image/x-icon" href="favicon.io.png" />
   </head>
@@ -81,17 +82,20 @@
           </div>
           <div class="section-two">
             <img
-              class=""
+              data-aos="zoom out"
+              data-aos-delay="500"
               src="./img/index-imgs/mechanic.png"
               alt="Mechanic Working"
               style="width: 100%"
             />
             <img
+              data-aos="fade-left"
               class="service"
               src="./img/index-imgs/service.png"
               alt="service icon"
             />
             <img
+              data-aos="fade-right"
               class="rating"
               src="./img/index-imgs/rating.png"
               alt="rating icon"
@@ -114,7 +118,7 @@
                   alt="setting icon"
                 />
               </div>
-              <div>
+              <div data-aos="fade-down">
                 <p class="margin-bottom-five">Convenient service</p>
                 <small
                   >Through True Rich Attended does no end <br />
@@ -130,7 +134,7 @@
                   alt="profile icon"
                 />
               </div>
-              <div>
+              <div data-aos="fade-down">
                 <p class="margin-bottom-five">Expert mechanics</p>
                 <small
                   >Through True Rich Attended does no end <br />
@@ -146,7 +150,7 @@
                   alt="dollar icon"
                 />
               </div>
-              <div>
+              <div data-aos="fade-down">
                 <p class="margin-bottom-five">Transparent pricing</p>
                 <small
                   >Through True Rich Attended does no end <br />
@@ -154,7 +158,7 @@
                 >
               </div>
             </div>
-            <a href="about.html" class="flex margin-top-ten">
+            <a href="about.html" class="flex margin-top-ten" data-aos="fade-right">
               <p class="know-learn-services right">Know more about us</p>
               <img src="./img/index-imgs/arrow.png" alt="arrow" width="10%" />
             </a>
@@ -164,6 +168,7 @@
             <form action="">
               <label for="info"></label>
               <input
+                data-aos="fade-left"
                 type="text"
                 class="info margin-top-ten"
                 name="info"
@@ -171,6 +176,7 @@
               />
               <label for="info"></label>
               <input
+                data-aos="fade-left"
                 type="email"
                 class="info"
                 name="info"
@@ -179,6 +185,7 @@
               />
               <label for="info"></label>
               <input
+                data-aos="fade-left"
                 type="text"
                 class="info"
                 name="info"
@@ -187,6 +194,7 @@
               />
               <label for="info"></label>
               <input
+                data-aos="fade-left"
                 type="tel"
                 class="info"
                 name="info"
@@ -223,6 +231,7 @@
             <div class="flex margin-top-ten">
               <div>
                 <img
+                  data-aos="zoom-in" data-aos-delay="200"
                   class="right"
                   src="./img/index-imgs/one.png"
                   alt="setting icon"
@@ -242,6 +251,7 @@
             <div class="flex margin-top-ten">
               <div>
                 <img
+                  data-aos="zoom-in" data-aos-delay="400"
                   class="right"
                   src="./img/index-imgs/two.png"
                   alt="profile icon"
@@ -261,6 +271,7 @@
             <div class="flex margin-top-ten">
               <div>
                 <img
+                  data-aos="zoom-in" data-aos-delay="600"
                   class="right"
                   src="./img/index-imgs/three.png"
                   alt="dollar icon"
@@ -292,42 +303,43 @@
         </div>
         <!-- Best practice? -->
         <div class="grid-container">
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="50">
             <img src="./img/index-imgs/car.png" alt="" />
             <p class="">Diagnostics</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="200">
             <img src="img/index-imgs/engine.png" alt="" />
             <p class="">Engine Repair</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="400">
             <img class="hover" src="./img/index-imgs/wheel.png" alt="" />
             <p class="">Wheel Repair</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="600">
             <img src="./img/index-imgs/gallon.png" alt="" />
             <p class="">Oil filter</p>
           </div>
         </div>
         <div class="grid-container">
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="800">
             <img src="./img/index-imgs/car-two.png" alt="" />
             <p class="">Body Work</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="1000">
             <img src="./img/index-imgs/battery.png" alt="" />
             <p class="">Batteries</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="1200">
             <img src="./img/index-imgs/shield.png" alt="" />
             <p class="">Insurance Claim</p>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="flip-left" data-aos-delay="1400">
             <img src="./img/index-imgs/setting.png" alt="" />
             <p class="">Custom Service</p>
           </div>
         </div>
         <a
+          data-aos="fade-right"
           href="service.html"
           class="flex pad-top-one"
           style="justify-content: right"
@@ -340,12 +352,13 @@
       <div class="images-flex flex">
         <div class="relative">
           <img
+            data-aos="flip-left" data-aos-delay="300"
             class="vehicle"
             src="./img/index-imgs/vehicle.png"
             alt=""
             width="70%"
           />
-          <div class="orange-card absolute"></div>
+          <div class="orange-card absolute" data-aos="flip-left" data-aos-delay="350"></div>
           <h3 class="absolute orange-card-text">
             Get in touch with us for <br />
             your service related query
@@ -355,6 +368,7 @@
           >
         </div>
         <img
+          data-aos="flip-left" data-aos-delay="400"
           class="capacitor"
           src="./img/index-imgs/capacitor.png"
           alt=""
@@ -765,6 +779,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
