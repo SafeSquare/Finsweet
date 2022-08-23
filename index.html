@@ -45,7 +45,7 @@
           <div>
             <span class="ash-line"></span>
           </div>
-          <div class="flex align">
+          <div class="road-assist flex align">
             <img
               class="right"
               src="./img/index-imgs/whatsapp-icon.png"
@@ -62,7 +62,7 @@
 
     <section class="view-one">
       <div class="container">
-        <div class="flex align">
+        <div id="mechanic-section" class="flex align">
           <div class="section-one">
             <h1>Get your vehicle service done online at one place</h1>
             <a href="service.html"
@@ -82,6 +82,7 @@
           </div>
           <div class="section-two">
             <img
+              id="mech-img"
               data-aos="zoom out"
               data-aos-delay="500"
               src="./img/index-imgs/mechanic.png"
@@ -107,7 +108,7 @@
 
     <section class="view-two">
       <div class="container">
-        <div class="flex">
+        <div class="input-section flex">
           <div class="section-one">
             <h2>We are taking car servicing seriously</h2>
             <div class="flex margin-top-ten">
@@ -210,11 +211,10 @@
 
     <section class="view-three">
       <div class="container">
-        <div class="flex align">
+        <div class="purple-section flex align">
           <div class="section-one">
             <h2>
-              We follow a clear process to help you <br />
-              out.
+              We follow a clear process to help you out.
             </h2>
             <small>
               Through True Rich Attended does no end it his mother <br />
@@ -377,7 +377,7 @@
       </div>
 
       <div class="container align">
-        <div class="grid-container" style="text-align: start">
+        <div class="grid-container grid-container-purple">
           <div>
             <h2 style="color: #661ce7">20+</h2>
             <p class="opacity">Professional</p>
@@ -702,8 +702,8 @@
 
     <section class="view-five">
       <div class="container">
-        <div class="flex align justify">
-          <div class="">
+        <div class="footer-section flex align justify">
+          <div class="get-in-touch">
             <h3 class="white-text margin-bottom-five" style="width: 70%">
               Get in touch with us for your service
             </h3>
@@ -720,7 +720,7 @@
               ><img class="" src="img/index-imgs/linkedin.png" alt=""
             /></a>
           </div>
-          <div style="width: 50%">
+          <div class="help-line" style="width: 50%">
             <div>
               <small class="white-text">Help line Number</small>
               <p class="white-text margin-bottom-five">1800 265 24 52</p>
@@ -770,7 +770,7 @@
           </li>
         </ul>
 
-        <small class="white-text">@ Copyright Finsweet 2021</small>
+        <small class="copy-right white-text">@ Copyright Finsweet 2021</small>
       </div>
     </footer>
 
@@ -789,7 +789,6 @@
 
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
         spaceBetween: 30,
         autoplay: {
           delay: 3000,
@@ -798,6 +797,12 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          426: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
         },
       });
     </script>

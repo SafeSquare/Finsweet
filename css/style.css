@@ -104,12 +104,21 @@ li {
   border: none;
 }
 
-.orange-button, .black-button, input[type="submit"] {
+.orange-button, input[type="submit"] {
   margin: 5% 0;
+  width: 100%;
   font-weight: 600;
   font-size: 15px;
   border-radius: 12px;
   padding: 16px 30px 16px 30px;
+}
+
+.black-button {
+  margin: 5% 0;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 16px 30px 16px 30px; 
 }
 
 .relative a button {
@@ -292,7 +301,127 @@ input[type="text"], input[type="email"], input[type="tel"] {
   background-color: #000;
 }
 
-@media screen and (max-width: 768px) {
-  /* .container {
-    width: 95vw; */
+@media screen and (max-width: 769px) {
+  .container {
+    width: 95vw !important;
+  }
+
+  #mechanic-section{
+    flex-direction: column-reverse;
+  }
+
+  .section-one, .section-two {
+    width: 100%;
+  }
+
+  #mech-img {
+    max-height: 85vh;
+    object-fit: cover;
+  }
+
+  .service, .rating {
+    width: 70%;
+  }
+
+  .service {
+   right: 10px;
+   top: 50px;
+  }
+  .rating {
+    right: 10px;
+    top: 160px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 580;
+    line-height: 50px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 40px;
+  }
+  
+  p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .orange-card-text {
+    font-weight: 100;
+    margin: 5% 12%;
+  }
 }
+
+@media screen and (max-width: 426px) {
+  .ash-line, .road-assist {
+    display: none;
+  }
+
+  .service {
+    right:5px;
+    top: 100px;
+   }
+
+   h1 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 580;
+    line-height: 50px;
+  }
+  
+  h3 {
+    font-size: 25px;
+    font-weight: 550;
+    line-height: 40px;
+  }
+
+  .input-section, .purple-section {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  .grid-container-purple {
+    grid-template-columns: 50% 50%;
+    text-align: center !important;
+  }
+
+  .grid-box {
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer-section {
+    flex-direction: column;
+  }
+
+  .get-in-touch, .help-line {
+    width: 100% !important;
+    /* text-align: center; */
+  }
+
+  .copy-right {
+    display: none;
+  }
+}
+
+
+
+
