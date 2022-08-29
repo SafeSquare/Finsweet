@@ -42,6 +42,11 @@ p {
   margin-left: 4.5vw;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 small, .opacity {
   opacity: 0.5;
 }

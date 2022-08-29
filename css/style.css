@@ -36,6 +36,15 @@ p {
   font-weight: 600;
 }
 
+.small-text {
+  display: block;
+  margin-top: 5%;
+  color: gray;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
 .know-learn-services {
   font-size: 12px;
   font-weight: 600;
@@ -150,6 +159,11 @@ input[type="text"], input[type="email"], input[type="tel"] {
   border: 1px dotted #ff6433;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .flex {
   display: flex;
 }
@@ -212,6 +226,15 @@ input[type="text"], input[type="email"], input[type="tel"] {
   width: 100%;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.activee {
+  color: #ff6433;
+}
+
 .grid-card, .slider-card {
   margin-bottom: 5px;
 }
@@ -219,6 +242,10 @@ input[type="text"], input[type="email"], input[type="tel"] {
 .grid-card {
   padding: 20%;
   margin-left: 5px;
+}
+
+.grid-card:hover {
+  transition: 5s !important;
 }
 
 .slider-card {
@@ -229,7 +256,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
   margin-bottom: 2%;
 }
 
-.grid-card:hover, .accordion, .accordion:after {
+.accordion, .accordion:after {
   transition: 5s;
 }
 
@@ -301,7 +328,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
   background-color: #000;
 }
 
-@media screen and (max-width: 769px) {
+/* @media screen and (max-width: 769px) {
   .container {
     width: 95vw !important;
   }
@@ -414,13 +441,12 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
   .get-in-touch, .help-line {
     width: 100% !important;
-    /* text-align: center; */
   }
 
   .copy-right {
     display: none;
   }
-}
+} */
 
 
 

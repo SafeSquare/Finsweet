@@ -35,15 +35,23 @@ p {
   font-size: 15px;
   font-weight: 600;
 }
+/* 
+.small-text {
+  display: block;
+  margin-top: 5%;
+  color: #f2f2f2;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 400;
+} */
+
+.opaque {
+  opacity: 0.7;
+}
 
 .know-learn-services {
   font-size: 12px;
   font-weight: 600;
-  margin-left: 4.5vw;
-}
-
-small, .opacity {
-  opacity: 0.5;
 }
 
 a {
@@ -55,12 +63,30 @@ li {
   list-style: none;
 }
 
-.orange-card-text, .white-text, input[type=submit], .black-button, .orange-button {
+.white-text, .orange-button {
   color: #ffffff;
 }
 
-.grid-card, .panel, .slider-card {
+.grid-box {
+  padding: 5%;
+  margin-right: 10px;
   background-color: #ffffff;
+} 
+
+.grid-card {
+  padding: 16%;
+  margin: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.activee {
+  color: #ff6433;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .pad-top-one {
@@ -71,7 +97,7 @@ li {
   padding-top: 5%;
 }
 
-.red-line, .margin-top-ten {
+.margin-top-ten {
   margin-top: 10%;
 }
 
@@ -100,45 +126,17 @@ li {
   background-color: #000;
 }
 
-.accordion, .accordion:after, .orange-button, .black-button, input[type="submit"], input[type="text"], input[type="email"], input[type="tel"] {
-  border: none;
+.orange-button {
 }
 
-.orange-button, .black-button, input[type="submit"] {
+.orange-button {
   margin: 5% 0;
+  width: 100%;
+  border: none;
   font-weight: 600;
   font-size: 15px;
   border-radius: 12px;
   padding: 16px 30px 16px 30px;
-}
-
-.relative a button {
-  top: 45%;
-  left: 41%;
-}
-
-input[type="text"], input[type="email"], input[type="tel"] {
-  width: 100%;
-  padding: 20px 30px;
-}
-
-::placeholder {
-  opacity: 0.7;
-}
-
-.ash-line {
-  height: 30px;
-  opacity: 0.3;
-  margin: 0 2vw;
-  border: 1px solid #939191;
-}
-
-.red-line {
-  width: 2px;
-  height: 40px;
-  opacity: 0.3;
-  margin-left: 2vw;
-  border: 1px dotted #ff6433;
 }
 
 .flex {
@@ -149,7 +147,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
   align-items: center;
 }
 
-.text-align, .orange-card {
+.text-align {
   text-align: center;
 }
 
@@ -169,131 +167,36 @@ input[type="text"], input[type="email"], input[type="tel"] {
   position: relative;
 }
 
-.service, .rating, .absolute {
+.absolute {
   position: absolute;
 }
 
-.service, .rating {
-  width: 20vw;
-}
-
-.service {
-  top: 0;
-  right: 15vw;
-}
-
-.rating {
-  top: 60%;
-  left: 15vw;
-}
-
-.grid-box, .grid-container {
-  display: grid;
-}
-
 .grid-container {
-  grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.grid-box {
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.grid-box img, .accordion {
-  width: 100%;
-}
-
-.grid-card, .slider-card {
-  margin-bottom: 5px;
-}
-
-.grid-card {
-  padding: 20%;
-  margin-left: 5px;
-}
-
-.slider-card {
-  padding: 10%;
-}
-
-.frequent-card {
-  margin-bottom: 2%;
-}
-
-.grid-card:hover, .accordion, .accordion:after {
-  transition: 5s;
+.grid-card:hover {
+  transition: 5s !important;
 }
 
 .images-flex {
   margin: 5% 0;
 }
 
-.orange-card {
-  width: 77%;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 19% 16.7%;
-}
-
-.absolute {
+.black-card {
   top: 0;
-  left: 23%;
+  left: 35%;
+  padding:7%;
+  background-color: #1e1b1b;
 }
 
-.orange-card-text {
-  font-weight: 200;
-  margin-top: 10%;
-  margin-left: 18%;
+.black-card-text {
+  color: #f2f2f2;
 }
 
-.swiper-slide {
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  width: 15%;
-}
- .accordion, .accordion:after {
-  background-color: #eee;
-  cursor: pointer;
-  padding: 5%;
-  text-align: left;
-  outline: none;
-}
- .active, .accordion:hover, .orange-card, .grid-card:hover, .orange-button, input[type="submit"] {
+ .active, .accordion:hover, .grid-card:hover, .orange-button, input[type="submit"] {
   background-color: #ff6433;
 }
 
-.panel {
-  padding: 2%;
-  display: none;
-}
-
-.accordion:after {
-  padding: 10px;
-  font-size: 15px;
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-  background-color: #000;
-}
-
-@media screen and (max-width: 768px) {
-  /* .container {
-    width: 95vw; */
-}
 

@@ -55,6 +55,11 @@ li {
   list-style: none;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .orange-card-text, .white-text, input[type=submit], .black-button, .orange-button {
   color: #ffffff;
 }
